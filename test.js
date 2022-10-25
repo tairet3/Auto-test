@@ -8,7 +8,7 @@ const {Builder, Browser, By, Key, until} = require('selenium-webdriver');
     let searchField = await driver.findElement(By.name('q'));
     await searchField.sendKeys('Денис Мархель');
     await searchField.sendKeys(Key.ENTER);
-    //await driver.wait(until.titleIs('Денис Мархель'),5000);
+    //await driver.wait(until.titleIs('Денис Мархель - Поиск в Google'), 5000);
 
     let list = await driver.findElements(By.className('MjjYud'));
     if(list.length <= 0){
