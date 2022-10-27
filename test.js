@@ -16,6 +16,7 @@ const {Builder, Browser, By, Key, until} = require('selenium-webdriver');
         throw new Error ('Test - Fail');
     } else {
         console.log ('Test - Success');
+        console.table(list);
     }
 
   } finally {
